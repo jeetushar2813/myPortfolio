@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Jeeteendar's Portfolio</title>
+    <!-- Font awesome CDN -->
+    <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo-no-background.png" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#softwares">Softwares</a></li>
+                <li><a href="Projects.html#projects">Projects</a></li>
+                <li><a href="/Images/Jeeteendar_SathiaSivasundar.pdf" download="Jeeteendar_SathiaSivasundar_Resume.pdf">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Jeeteendar</span></h1>
+            <p>Unity3D/Game/AR/VR Developer</p>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------ABOUT ME SECTION-------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/About me image.JPG" alt="" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Unity VR developer and designer who is looking to create games/applications 
+                    that truly make an impact. I am extremely enthusiastic and passionate about 
+                    working with bleeding edge technology and concepts.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span></li>
+                        <li><span>3D Modelling</span></li>
+                        <li><span>Environment Design</span></li>
+                        <li><span>Staging & Lighting</span></li>
+                        <li><span>Colour Theory</span></li>
+                        <li><span>Report Writing/Documentation</span></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jan 2021 - May 2022 (Team Member) | Jun 2022 - Present (Team Leader)</span><br>Unity Developer(Games(Android/iOS/PC)/Softwares)/ Front-End Developer – SMM Education Group</li>
+                        <li><span>Jun 2019 - Jan 2021</span><br>Executive Technical Support – Lenovo ASEAN(Scicom (MSC) Berhad)</li>
+                        <li><span>Jan 2019 - Mar 2019 (Intern) | May 2019 - Dec 2019 (Project Basis)
+                        </span><br>AR/VR/Unity Developer/ Content Developer – FlyTone Asia, Malaysia</li>
+                        
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2023</span><br>Master of Business Administration (Marketing) from UNITAR International University</li>
+                        <li><span>2015-2020</span><br>Bachelor of Multimedia(Hons.), Virtual Reality from Multimedia University(MMU)</li>
+                        <li><span>2014-2015</span><br>Foundation in Creative Multimedia from Multimedia University(MMU)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------SOFTWARES SECTION---------------- -->
+<div id="softwares">
+    <div class="container">
+        <h1 class="sub-title">Softwares/ Programming Languages</h1>
+        <h1 class="sub-title2">Game Engine</h1>
+        <div class="softwares-list">
+            <div>
+                <h1>Unity</h1>
+                <img src="Images/Unity-logo.png" class="unity">
+            </div>
+        </div>
+
+        <div class="gap"></div>
+        <h1 class="sub-title2">Libraries/Frameworks</h1>
+        <div class="softwares-list">
+            <div>
+                <h1>React</h1>
+                <img src="Images/React-logo.png" class="unity">
+            </div>
+        </div>
+
+        <div class="gap"></div>
+        <h1 class="sub-title2">Programming Languages</h1>
+        <div class="softwares-list">
+            <div>
+                <h1>C#</h1>
+                <img src="Images/csharp-logo.png" class="unity">
+            </div>
+            <div>
+                <h1>HTML</h1>
+                <img src="Images/html-logo.png" class="unity">
+            </div>
+            <div>
+                <h1>CSS</h1>
+                <img src="Images/css-logo.png" class="unity">
+            </div>
+            <div>
+                <h1>Javascript</h1>
+                <img src="Images/js-logo.png" class="unity">
+            </div>
+        </div>
+
+        <div class="gap"></div>
+        <h1 class="sub-title2">3D Modelling/Texturing</h1>
+        <div class="softwares-list">
+            <div>
+                <h1>Blender</h1>
+                <img src="Images/Blender-logo.png" class="blender">
+            </div>
+            <div>
+                <h1>3DS Max</h1>
+                <img src="Images/3DSMax-logo.png" class="maya">
+            </div>
+            <div>
+                <h1 class="pp-text">Sketchup</h1>
+                <img src="Images/sketchup-logo.png" class="rp">
+            </div>
+            <div>
+                <h1 class="subpai-text">Substance Painter</h1>
+                <img src="Images/Substance-painter-logo.png" class="subpai">
+            </div> 
+        </div>
+        <div class="gap"></div>
+        <h1 class="sub-title2">Digital Audio Workstations</h1>
+        <div class="softwares-list"> 
+            <div>
+                <h1 class="pp-text">Reaper</h1>
+                <img src="Images/reaper-logo.png" class="rp">
+            </div>
+            <div>
+                <h1 class="pp-text">Audacity</h1>
+                <img src="Images/Audacity_Logo.png" class="rp">
+            </div>
+        </div>
+        <div class="gap"></div>
+        <h1 class="sub-title2">IDE</h1>
+        <div class="softwares-list">
+            <div>
+                <h1>VS Code</h1>
+                <img src="Images/VSCode-logo.png" class="VScode">
+            </div>
+            <div>
+                <h1 class = "msvs-text" >Microsoft Visual Studio</h1>
+                <img src="Images/visual-studio-logo.png" class="MSVScode">
+            </div>
+        </div>
+        
+               
+    </div>
+</div>
+
+<!-- ---------CONTACT SECTION------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jeetu.icscyber@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+60143662469</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeeteendar-sathia-6aa659277/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jeetushar2813" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="www.google.com" target="_blank" class="btn btn2">View CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jeeteendar.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'www.google.com'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

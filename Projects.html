@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Jeeteendar's Portfolio</title>
+    <!-- Font awesome CDN -->
+    <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo-no-background.png" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#softwares">Softwares</a></li>
+                <li><a href="Projects.html#projects">Projects</a></li>
+                <li><a href="/Images/Jeeteendar_SathiaSivasundar.pdf" download="Jeeteendar_SathiaSivasundar_Resume.pdf">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Jeeteendar</span></h1>
+            <p>Unity3D/Game/AR/VR Developer</p>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div id ="projects">
+        <div class="container">
+            <div class="sub-title">Projects</div>
+            <div class="work-list">
+                <!-- Work 1 - Virtuar -->
+                <div class="work">
+                    <img src="Images/Virtuar.jpeg" alt="Virtuar">
+                    <div class="layer">
+                        <h3>Virtuar</h3>
+                        <p>Augmented Reality based 3D Visualizer for Apple Devices with and without LiDAR support. Subscription based application, with a personal repository to store 3D models of multiple formats. 
+                        </p>
+                        <a href="virtuar.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Work 2 FlyTone -->
+                <div class="work">
+                    <img src="Images/OtherProjects/Infra (1).jpeg" alt="Virtuar">
+                    <div class="layer">
+                        <h3>Fly Tone Projects</h3>
+                        <p>Listed multiple projects worked alongside Fly Tones in the period of January 2019 to December 2019. 
+                        </p>
+                        <a href="FlyToneProjects.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Work 3 SMM -->
+                <div class="work">
+                    <img src="Images/black.avif" alt="Virtuar">
+                    <div class="layer">
+                        <h3>SMM Education Group - Coming Soon</h3>
+                        <p>Projects done in SMM Education Group. 
+                        </p>
+                        <!-- <a href="virtuar.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <!-- Work 2 Recycle Me -->
+                <div class="work">
+                    <img src="Images/black.avif" alt="Virtuar">
+                    <div class="layer">
+                        <h3>UOC - Coming Soon</h3>
+                        <p>A used oil recycling application made for University Students (International Business Students) as per the requirement of their supervisor and client. 
+                        </p>
+                        <!-- <a href="virtuar.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                
+            </div>     
+        </div>
+
+    </div>
+    
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jeetu.icscyber@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+60143662469</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeeteendar-sathia-6aa659277/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jeetushar2813" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="/Images/Jeeteendar_SathiaSivasundar.pdf" target="_blank" class="btn btn2">View CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jeeteendar.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'www.google.com'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
